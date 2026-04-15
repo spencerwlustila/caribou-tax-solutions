@@ -6,7 +6,7 @@ export default function AboutPage() {
         Simply:
       </h2>
 
-      <p className="text-md mb-3">
+      <p className="text-md text-[var(--secondary)] mb-3">
         Caribou Accounting is a family-run firm focused on providing reliable tax preparation and bookkeeping services for individuals and small businesses.
       </p>
 
