@@ -1,65 +1,64 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+  // home page
+  // export default makes this the default page when visiting the root URL
+  return ( // returns what is to be shown on the page
+    // main is the main content of the page
+    // className is used to apply styles to the element (Tailwind)
+    //min-h full screen height 
+    // flex flex-col vertical layout
+    // items-center center horizontally
+    // justify-center center vertically
+    // bg-black background color black
+    // text-center center text
+    // p-6 padding 6
+
+
+    // h1 is the biggest heading
+    // text-4xl is the font size (4 times the base size)
+    // font-bold makes the text bold
+    // mb-4 margin bottom 4
+
+
+    // p is a paragraph
+    // text-lg is the font size (large)
+    // mb-6 margin bottom 6
+
+    // button is a clickable element
+    // bg-blue-600 background color blue (600 is a shade)
+    // text-white text color white
+    // px-6 padding left and right 6
+    // py-3 padding top and bottom 3
+    // rounded-lg rounded corners (large)
+    // hover:bg-blue-700 change background color on hover (darker blue)
+
+
+    // </main> closes the main section
+    // }; closes the function
+    // } closes the export default
+    <main className="min-h-screen flex flex-col items-center justify-start pt-20 bg-white text-black text-center p-6"> 
+      <Image
+      src="/logo.png"
+      alt="Caribou Tax Preparations and Bookkeeping"
+      width={600}
+      height={500}
+      className="mb-2"
+      />
+
+      <h1 className="text-4xl font-bold mb-3">
+        Caribou Tax Preparation and Bookkeeping
+      </h1>
+
+      <p className="text-lg mb-6">
+        A single source for all your financial needs
+      </p>
+
+      <button className="bg-blue-600 text-white px-12 py-6 rounded-lg hover:bg-blue-700">
+        Get a Quote
+      </button>
+
+
+    </main>
   );
 }
