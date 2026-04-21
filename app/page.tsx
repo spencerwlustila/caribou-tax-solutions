@@ -37,13 +37,12 @@ export default function Home() {
     // </main> closes the main section
     // }; closes the function
     // } closes the export default
-    <main className="min-h-screen flex flex-col items-center justify-start pt-20 bg-white text-black text-center p-6"> 
+    <main className="min-h-screen flex flex-col items-center justify-start pt-25 bg-white text-black text-center p-6"> 
       <Image
       src="/logo.png"
       alt="Caribou Tax Preparations and Bookkeeping"
       width={600}
       height={500}
-      className="mb-2"
       />
 
       <h1 className="text-4xl font-bold mb-3">
@@ -54,10 +53,9 @@ export default function Home() {
         A single source for all your financial needs
       </p>
 
-      <button className="bg-blue-600 text-white px-12 py-6 rounded-lg hover:bg-blue-700">
+      <button className="bg-[var(--secondary)] text-white px-6 py-6 rounded-md">
         Get a Quote
       </button>
-
 
     </main>
   );
