@@ -49,12 +49,47 @@ export default function Home() {
         Caribou Tax Preparation and Bookkeeping
       </h1>
 
-      <p className="text-lg mb-6">
+      <p className="text-lg mb-20">
         A single source for all your financial needs
       </p>
 
-      <button className="bg-[var(--secondary)] text-white px-6 py-6 rounded-md">
-        Get a Quote
+
+            <h1 className="text-lg text-[var(--secondary)] mb-4">
+                Get started with Caribou Accounting!
+            </h1>
+            <h2 className="text-sm text-[var(--primary)] mb-4">
+                Getting started is simple.  Share a few details and we'll guide you through the next steps.
+            </h2>
+            <p className="text-sm text-[var(--primary)] mb-4">
+                2 options: Tax Preperation, Bookkeeping
+            </p>
+<div className="flex flex-col items-center space-y-4 mt-8 mb-8">
+
+  <div className="border p-4 rounded-lg w-full max-w-md text-center">
+    1. Submit your information
+  </div>
+
+  <span className="text-2xl">↓</span>
+
+  <div className="border p-4 rounded-lg w-full max-w-md text-center">
+    2. We review your details
+  </div>
+
+  <span className="text-2xl">↓</span>
+
+  <div className="border p-4 rounded-lg w-full max-w-md text-center">
+    3. We follow up with next steps and pricing
+  </div>
+
+  <span className="text-2xl">↓</span>
+
+  <div className="border p-4 rounded-lg w-full max-w-md text-center">
+    4. Upload documents and we get to work
+  </div>
+
+</div>
+<button className="bg-[var(--secondary)] text-white px-6 py-6 rounded-md">
+        Get Started
       </button>
 
     </main>
