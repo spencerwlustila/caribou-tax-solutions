@@ -28,7 +28,36 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+     <body className="min-h-full flex flex-col">
+
+<nav
+  className="w-full text-white border-b p-4"
+  style={{ backgroundColor: "#2F4F6F"  }}
+>
+  <div className="w-full flex items-center justify-between">
+    
+    {/* Left */}
+    <div className="w-1/3">
+      <h1 className="font-bold text-lg ml-6">Caribou Accounting</h1>
+    </div>
+
+    {/* Middle */}
+    <div className="w-1/3 flex justify-center gap-8">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/pricing">Pricing</a>
+      <a href="/getstarted">Get Started</a>
+    </div>
+
+    {/* Right placeholder */}
+    <div className="w-1/3"></div>
+
+  </div>
+</nav>
+  {children}
+
+</body>
     </html>
   );
 }
