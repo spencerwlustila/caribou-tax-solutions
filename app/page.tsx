@@ -51,8 +51,8 @@ export default function Home() {
           </h1>
 
           <p className="text-lg text-gray-700 mb-8 max-w-xl">
-            Reliable tax and bookkeeping support for individuals, freelancers,
-            and small businesses.
+          Reliable support for individuals, freelancers, and small businesses — 
+          without confusion, surprises, or hidden fees.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

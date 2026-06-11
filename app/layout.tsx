@@ -28,6 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      
      <body className="min-h-full flex flex-col">
 
 <nav
@@ -56,7 +57,33 @@ export default function RootLayout({
   </div>
 </nav>
   {children}
+<footer className="bg-[var(--primary)] text-white py-8 mt-auto">
+  <div className="max-w-6xl mx-auto px-6 text-center">
 
+    <h2 className="font-bold text-lg mb-2">
+      Caribou Accounting
+    </h2>
+
+    <p className="text-sm text-white/80 mb-4">
+      Tax preparation and bookkeeping services for individuals and small businesses.
+    </p>
+
+    <div className="flex justify-center gap-6 text-sm mb-4">
+      <a href="/" className="hover:opacity-80 transition">Home</a>
+      <a href="/about" className="hover:opacity-80 transition">About</a>
+      <a href="/services" className="hover:opacity-80 transition">Services</a>
+      <a href="/pricing" className="hover:opacity-80 transition">Pricing</a>
+      <a href="/getstarted" className="hover:opacity-80 transition">Get Started</a>
+    </div>
+
+    <p className="text-xs text-white/70">
+      © 2026 Caribou Accounting. All rights reserved.
+    </p>
+<p className="text-xs text-white/60 mt-2">
+  Website by Lustila Digital
+</p>
+  </div>
+</footer>
 </body>
     </html>
   );
