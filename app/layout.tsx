@@ -4,7 +4,6 @@ import "./globals.css";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,10 +13,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
   title: "Caribou Accounting",
-  description: "Tax preparation and bookkeeping services",
+  description: "Tax preparation and bookkeeping services for individuals and small businesses.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -57,6 +58,7 @@ export default function RootLayout({
     <div className="w-1/3"></div>
 
   </div>
+  
 </nav>
   {children}
 <footer className="bg-[var(--primary)] text-white py-8 mt-auto">
