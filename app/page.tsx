@@ -75,7 +75,7 @@ export default function Home() {
         {/* Right Side */}
         <div className="flex justify-center">
           <Image
-            src="/logo.png"
+            src="/icon.png"
             alt="Caribou Tax Preparations and Bookkeeping"
             width={450}
             height={350}
