@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Tax preparation and bookkeeping services for individuals and small businesses.",
   icons: {
-    icon: "/icon.png",
+    icon: "/CaribouLogo.png",
   },
 };
 
@@ -44,7 +44,7 @@ export default function RootLayout({
             {/* Left */}
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/icon.png"
+                src="/CaribouLogo.png"
                 alt="Caribou Accounting logo"
                 width={150}
                 height={65}
